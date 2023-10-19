@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    color: #aaaaaa;
+    background-color: #333333;
+    font: normal 12px "Poppins";
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza horizontalmente */
+    justify-content: flex-start;
+    /* Alinha ao topo verticalmente */
+    height: 100vh;
+    /* Define a altura da página inteira */
+    margin: 0;
+    /* Remove margens padrão do corpo */
+    background: #201b2c;
+}
+
+#title {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+#teste {
+    color: #ffffff;
+}
+
+
+#selectVersionContainer,
+#selectModelContainer {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    /* Adicione margem para separar as caixas verticalmente */
+}
+
+select {
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+    /* Ajusta a largura da caixa de seleção */
+}
+
+#getActivationKey {
+    width: 15%;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    background-color: #514869;
+    color: #ffffff;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    /* Centraliza o botão horizontalmente */
+}
+
+#activationKeyContainer {
+    justify-content: center;
+    text-align: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Alinha os elementos verticalmente no centro */
+    max-width: 350px;
+    /* Largura máxima de 350px */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    position: relative;
+}
+
+#activationKeyText {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#copyNotification {
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+
+#activationKeyDisplayContainer {
+    border-radius: 5px;
+    background-color: #333333;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#activationKeyDisplay {
+    text-align: center;
+}
+
+#copyActivationKey {
+    padding: 20px 20px;
+    background-color: #514869;
+    color: #ffffff;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+    display: none;
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    font-size: 1.3rem;
+    display: none;
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+}
+
+@media (max-width: 100vh) {
+    #getActivationKey {
+        width: 100%;
+        /* Ocupa toda a largura do contêiner */
+    }
+
+    #selectVersionContainer,
+    #selectModelContainer {
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        /* Adicione margem para separar as caixas verticalmente */
+    }
+
+    select {
+        padding: 15px;
+        font-size: 1.3rem;
+        border: 2px solid #333333;
+        border-radius: 5px;
+        background-color: #333333;
+        color: #ffffff;
+        width: 100%;
+        /* Ajusta a largura da caixa de seleção */
+    }
+
+
+    #getActivationKey {
+        width: 70%;
+        padding: 20px 20px;
+        font-size: 2rem;
+        background-color: #514869;
+        color: #ffffff;
+        box-shadow: 0px 10px 40px #00000056;
+        outline: none;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+        /* Centraliza o botão horizontalmente */
+    }
+
+    #title {
+        font-size: 4.5rem;
+        color: #ffffff;
+    }
+
+    #teste {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    #selectModel,
+    #selectVersion {
+        font-size: 2rem
+    }
+
+    #activationKeyText {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    #activationKeyDisplayContainer {
+        border-radius: 5px;
+        background-color: #333333;
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+        width: 80%;
+        /* Defina a largura desejada (80% da largura da tela) */
+        max-width: 600px;
+        /* Defina o máximo de largura desejado */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
+    }
+
+
+    #activationKeyDisplay {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+
+
+    #copyActivationKey {
+        padding: 20px 20px;
+        background-color: #514869;
+        color: #ffffff;
+        box-shadow: 0px 10px 40px #00000056;
+        outline: none;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        justify-content: center;
+        font-size: 2rem;
+        display: none;
+        width: 100%;
+        /* Ocupa toda a largura do contêiner */
+    }
+
+    #copyNotification {
+        display: none;
+        color: green;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    /* Estilos para telas maiores aqui */
+}

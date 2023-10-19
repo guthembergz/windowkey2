@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <h1 id="title">Chaves de Ativação</h1>
+
+    <div class="activation-section">
+        <!-- Adicione a div para agrupar a label e a seleção de versão -->
+        <div id="selectVersionContainer">
+            <label id="teste" for="selectVersion">Selecione a versão do Windows:</label>
+            <select id="selectVersion">
+                <option value="" disabled selected >Selecione uma opção</option>
+            </select>
+        </div>
+
+        <div id="spacing"></div>
+
+        <!-- Adicione a div para agrupar a label e a seleção de modelo de chave -->
+        <div id="selectModelContainer">
+            <select id="selectModel">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <!-- Opções do modelo aqui -->
+            </select>
+        </div>
+        
+
+        <div id="spacing"></div>
+
+        
+    </div>
+    <button id="getActivationKey">Obter Chave</button>
+
+
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+    <div id="spacing"></div>
+
+    <div id="activationKeyContainer">
+        <p id="activationKeyText">Chave de Ativação:</p>
+        <div id="activationKeyDisplayContainer">
+            <div id="activationKeyDisplay">Sua chave aparecerá aqui.</div>
+        </div>
+        <div id="activationKeyContent">
+            <button id="copyActivationKey" style="display: none;">Copiar</button>
+            
+        </div>
+    </div>
+    <div id="spacing"></div>
+    <div id="copyNotification">Mensagem copiada</div>
+
+
+
+
+
+    <script src="keys.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
